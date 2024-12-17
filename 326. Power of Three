@@ -1,0 +1,26 @@
+bool isPowerOfThree(int n)
+ {
+   	int c=0,d=0,t;
+	t=n;
+	while(n>0)
+	{
+		if(n%3==0)
+		c++;
+		
+		else
+		d++;
+		
+		n=n/3;
+	}
+	int s=1;
+	for(int i=1;i<=c;i++)
+	{
+		s=s*3;
+	}
+if(s==t)
+return true;
+else
+return false;
+
+
+}
